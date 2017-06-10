@@ -1,0 +1,15 @@
+###########################################################
+# This action is used to generate grasp for a single object,
+# according to grasp generator config (gripper/hand properties, ...)
+
+# Object for which grasp generation is requested
+Object object
+
+# Name of the configuration to use
+string config_name
+---
+# All grasps
+moveit_msgs/Grasp[] grasps
+---
+# Grasps found thus far
+moveit_msgs/Grasp[] grasps

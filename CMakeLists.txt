@@ -17,6 +17,7 @@ add_action_files(
   FILES
     FindGraspableObjects.action
     GraspPlanning.action
+    GenerateGrasps.action
 )
 
 add_message_files(
