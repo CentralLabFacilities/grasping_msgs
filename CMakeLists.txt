@@ -18,6 +18,7 @@ add_action_files(
     FindGraspableObjects.action
     GraspPlanning.action
     GenerateGrasps.action
+    FitPrimitives.action
 )
 
 add_message_files(
