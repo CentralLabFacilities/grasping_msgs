@@ -1,0 +1,27 @@
+########################################################################
+# This action is called for object fitting as primitives and includes 
+# passing a cluster, support surfaces and a config identifier (prefs)
+
+# List of objects each containing a cluster to be fitted and an optional 
+# support surface name
+Object[] objects
+
+# List of support surface objects, mostly passed as a plane, but not 
+# restricted to. Surface names should enclose the referred surface name
+# given in the objects. Several objects can share a same support surface
+Object[] support_surfaces
+
+# Optional configuration identifier, referring to a named set of params
+# to be loaded and used for this fitting. 
+# Empty means default config used
+# One config name means use this config for all objects to be fitted
+# As many names as objects, means use a specific config for each object
+string[] config_names
+---
+# Object containing primitives, and by default all other information
+# passed. To lower the data payload, preferences can tell to not copy 
+# the original point cluster back in
+Object[] objects
+---
+# Publish objects as they are fitted
+Object object
