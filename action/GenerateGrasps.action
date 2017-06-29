@@ -11,5 +11,5 @@ string config_name
 # All grasps
 moveit_msgs/Grasp[] grasps
 ---
-# Grasps found thus far
-moveit_msgs/Grasp[] grasps
+# Grasp as they are found
+moveit_msgs/Grasp grasp
